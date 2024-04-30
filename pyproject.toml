@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "openstack_cli_env"
+version = "0.1.0"
+description = "Slim virtual environment for running the OpenStack CLI without system installation using Poetry"
+authors = ["thomaslaurenson <thomas@thomaslaurenson.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+nectarallocationclient = {version = "1.9.0"}
+python-glanceclient = {version = "4.4.0"}
+python-neutronclient = {version = "11.1.0"}
+python-novaclient = {version = "18.4.0"}
+python-keystoneclient = {version = "5.4.0"}
+python-openstackclient = {version = "6.6.0"}
+
+[tool.poetry.group.dev.dependencies]
+flake8 = "^7.0.0"
+flake8-docstrings = "1.7.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
